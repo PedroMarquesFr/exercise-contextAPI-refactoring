@@ -1,18 +1,10 @@
-import React, { useState } from "react";
-import "./App.css";
-import Cars from "./Cars";
-import MyContext from "./myContext";
+import React from 'react';
+import './App.css';
+import Cars from './Cars';
 
 function App() {
-  const [cars, setCars] = useState({
-    red: false,
-    blue: false,
-    yellow: false,
-  });
   return (
-    <MyContext.Provider value={{ cars, setCars }}>
-      <Cars />
-    </MyContext.Provider>
+    <Cars />
   );
 }
 
