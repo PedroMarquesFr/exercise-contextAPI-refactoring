@@ -9,7 +9,7 @@ import carYellow from "./images/carYellow.jpeg";
 import MyContext from "./myContext";
 import { moveCar } from "./redux/actionCreators";
 
-function Cars({ redCar, blueCar, yellowCar, moveCar }) {
+const Cars = React.memo(({ redCar, blueCar, yellowCar, moveCar }) => {
   return (
     <MyContext.Consumer>
       {({cars, setCars}) => (
@@ -49,7 +49,7 @@ function Cars({ redCar, blueCar, yellowCar, moveCar }) {
       )}
     </MyContext.Consumer>
   );
-}
+})
 
 Cars.propTypes = {
   moveCar: PropTypes.func.isRequired,
