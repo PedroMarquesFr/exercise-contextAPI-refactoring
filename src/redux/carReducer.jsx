@@ -17,7 +17,7 @@ function carReducer(state = initialState, action) {
         ...state,
         cars: { ...state.cars, [action.car]: action.side }
       };
-    default:
+    default: 
       return state;
   }
 }
