@@ -7,7 +7,6 @@ import MyContext from './context/MyContext'
 import carBlue from './images/carBlue.jpeg';
 import carRed from './images/carRed.jpeg';
 import carYellow from './images/carYellow.jpeg';
-import { moveCar } from './redux/actionCreators';
 
 export default function Cars() {
   const {cars:{red: redCar,blue: blueCar,yellow: yellowCar}, moveCar} = useContext(MyContext);
